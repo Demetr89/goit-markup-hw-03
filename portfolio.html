@@ -1,65 +1,73 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
+   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header class="page-header">
-        <div class="menu-nav">
-          <nav class="nav">
-            <a class="logo-link" href="./index.html">Web<span class="logo-header">Studio</span></a>
-  
-            <ul class="list-1">
-              <li class="list-item">
-                <a class="link studia" href="./index.html">Студія</a>
-              </li>
-              <li class="list-item">
-                <a class="link portfolio current" href="./portfolio.html">Портфоліо</a>
-              </li>
-              <li class="list-item">
-                <a class="link" href="Контакти">Контакти </a>
-              </li>
-            </ul>
-          </nav>
-  
-          <ul class="list-2" >
-            <li><a class="link" href="info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="link" href="+380961111111">+38 096 111 11 11</a></li>
-          </ul>
-        </div>
-      </header>
+      <nav class="conteiner nav">
+        <a class="logo-link" href="">Web<span class="logo-header">Studio</span></a>
+
+        <ul class="list-nav">
+          <li class="list-item">
+            <a class="link studia current" href="./index.html">Студія</a>
+          </li>
+          <li class="list-item">
+            <a class="link portfolio" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="list-item">
+            <a class="link" href="Контакти">Контакти</a>
+          </li>
+        </ul>
+
+        <ul class="list-contats">
+          <li class="item"><a class="link" href="info@devstudio.com">info@devstudio.com</a></li>
+          <li class="item"><a class="link" href="+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+      </nav>
+    </header>
 
 
     <main>
-        <section class="portfolio">
+        <section class="section-app">
+          <div class="conteiner-portfolio">
             <h1 class="visually-hidden">portfolio</h1>
             <ul class="filtrs">
-                <li>
+                <li class="item">
                     <button class="button" type="button"><span>Усі</span></button>
                 </li>
-                <li>
+                <li class="item">
                     <button class="button" type="button">Веб-сайти</button>
                 </li>
-                <li>
+                <li class="item">
                     <button class="button" type="button">Додатки</button>
                 </li>
-                <li>
+                <li class="item">
                     <button class="button" type="button">Дизайн</button>
                 </li>
-                <li>
+                <li class="item">
                     <button class="button" type="button">Маркетинг</button>
                 </li>
             </ul>
-      
+         </div>
+        </section>
+        
+        <section class="section portfolio">
         
             <ul class="proect">
             <li class="list-item">

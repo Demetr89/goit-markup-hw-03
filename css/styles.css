@@ -1,292 +1,440 @@
 :root {
-    --main-font: 'Roboto',sans-serif;
-    --brand-color-left:#2196F3;
-    --brand-color-right:#000000;
-    --brand-color-fut:#FFFFFF;
-    --contacts-color:#757575;
-    --contacts-color-footer: rgba(255, 255, 255, 0.6);
-    --main-txt-cl: #212121;
-    --light-txt-cl: #F5F5F5;
-    --team-color-content:#F5F4FA;
-    --hero-footer-color:#2F303A;;
+  --main-font: 'Roboto', sans-serif;
+  --brand-color-left: #2196f3;
+  --brand-color-right: #000000;
+  --brand-color-fut: #ffffff;
+  --contacts-color: #757575;
+  --contacts-color-footer: rgba(255, 255, 255, 0.6);
+  --main-txt-cl: #212121;
+  --light-txt-cl: #f5f5f5;
+  --team-color-content: #f5f4fa;
+  --hero-footer-color: #2f303a;
 
-    /*Backround colors*/
-    
+  /*Backround colors*/
+
+  /* radius*/
+  --border-radius: 4px;
+}
+/**
+  |============================
+  | 
+  |============================
+*/
+/* Селектор тега */
+body {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+  background-color: var(--brand-color-fut);
+}
+/* reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-    /* Селектор тега */
- body {
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    letter-spacing: 0.03em;
-    color: var(--main-txt-cl);
-    background-color: var(--brand-color-fut)
-    
-  }
- .hero {
-    background: var(--hero-footer-color);
-    
-    
-  }
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
 
- .page-header {
-    background:var(--brand-color-fut);
-  }
-  .logo-link {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31/26);
-    letter-spacing: 0.03em;
-    color: var(--brand-color-left);
-    text-decoration: none;
-    
-    
-  }
-  .hero .title {
-    color:var(--light-txt-cl);
-    font-family: var(--main-font);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-  }
-  
-  .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px; 
-  }
-  .page-header .link {
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.02em;
-    color:var(--main-txt-cl) ;
-    text-decoration: none;
-    
-    
-  }
-  .page-header .link:hover ,
-  .page-header .link:focus {
-    color:var(--brand-color-left);
-  }
-  .logo-link:hover
-  .logo-link:focus {
-    color:var(--brand-color-left);
-  }
-    
-  .link.studia.current ,
-  .link.portfolio.current {
-    color:var(--brand-color-left);
-    
-  }
-  .logo-header {
-    color: var(--main-txt-cl);
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
-  }
-  .link-studia {
-    text-decoration: none;
-    font-family: var(--main-font);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.02em;
-    color: var(--main-txt-cl);
-    text-decoration: none;
-  }
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 
-  .list-1 {
-    list-style-type: none;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
 
-  }
-  
-  .list-2 .link {
-    justify-content: space-between;
-    text-decoration: none;
-    color: var(--contacts-color); 
-  }
-  .list-2 {
-    list-style-type: none;
-  }
+.hero {
+  background: var(--hero-footer-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-right: 452px;
+  padding-bottom: 200px;
+  padding-left: 452px;
+}
 
-  .btn {    
-    background: var(--brand-color-left);
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: var(--main-font);
-    color: var(--light-txt-cl);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30/16);
- }
- .btn:hover ,
- .btn:focus {
-    background: #188CE8;
- }
- .propriet {
-    list-style-type: none;
-    
- }
- .propriet .feature {
-    color: var(--main-txt-cl);
-    font-family: var(--main-font);
-    
-    
- }
- .description {
+.page-header {
+  background: var(--brand-color-fut);
+}
 
-    font-family: var(--main-font);
-    color: var(--contacts-color);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24/14);
- }
+.logo-link {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--brand-color-left);
+  text-decoration: none;
+}
 
- .feature {
-    list-style-type: none;
-    
-    
- }
- .propriet .title {
-    font-family: var(--main-font);
-    font-style: normal;
-    font-size: 14px;
-    text-transform: uppercase;
+.hero .title {
+  color: var(--light-txt-cl);
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    color: var(--brand-color-right);
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
- }
- .list-duty {
-    list-style-type: none;
-    
- }
- .our-team {
-    list-style-type: none;
-    font-family: var(--main-font);
- }
- .section-title {
-    font-family: var(--main-font);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42/36);
-    
+.page-header .link {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+  text-decoration: none;
+}
 
-    color: var(--brand-color-right);
- }
- .footer .link {
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24/14);
-    color: var(--brand-color-fut);
-    text-decoration: none;
-    list-style-type: none;
-    
- } 
- .footer .list-item {
-    list-style-type: none;
- } 
-  .footer .link:hover ,
-  .footer .link:focus{
-    color: var(--brand-color-left);
- }
- .footer {
-    background:var(--hero-footer-color);
- }
- .logo-footer {
-    color: var(--light-txt-cl);
-    
- }
-  .link .adress {
-    color:var(--light-txt-cl);
- }
- .contacts-addres .contacts {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: var(--contacts-color-footer);
+.page-header .link:hover,
+.page-header .link:focus {
+  color: var(--brand-color-left);
+}
 
- }
- .contacts:hover ,
- .contacts:focus {
-    color: var(--brand-color-left);
- }
+.logo-link:hover .logo-link:focus {
+  color: var(--brand-color-left);
+}
 
- .proect {
-    list-style-type: none;
-    font-family: var(--main-font);
- }
+.link.studia.current,
+.link.portfolio.current {
+  color: var(--brand-color-left);
+}
 
- .descr {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(19/16);
-    letter-spacing: 0.03em;
-    color: var(--contacts-color);
- }
- .filtrs {
-    list-style-type: none;
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(26/16);
-    letter-spacing: 0.03em;
- }
- .filtrs .button:hover ,
- .filtrs .button:focus {
-    color: var(--brand-color-fut);
-    background-color: var(--brand-color-left);
- }
+.logo-header {
+  color: var(--main-txt-cl);
+}
 
- .button{
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(26/16);
-    letter-spacing: 0.03em;
-    color: var(--brand-color-right);
-    background:var(--team-color-content);
-    cursor: pointer;
-    
- }
- .button:hover , 
- .button:focus {
-    color: var(--brand-color-left);
- }
- .section-team {
-    background: var(--team-color-content);
- }
- .section-team .list-item {
-    background-color: var(--brand-color-fut);
- }
- .team-name {
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    color: var(--main-txt-cl);
- }
+.link-studia {
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+  text-decoration: none;
+}
+
+.group .title {
+  margin-bottom: 10px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.list-nav {
+  display: flex;
+  list-style-type: none;
+  margin-left: 93px;
+}
+
+.list-nav .list-item {
+  margin-right: 50px;
+}
+
+.list-nav .list-item:last-child {
+  margin-right: 0;
+}
+
+.list-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.list-contats {
+  display: flex;
+  list-style-type: none;
+  margin-left: auto;
+}
+
+.list-contats .link {
+  justify-content: space-between;
+  text-decoration: none;
+  color: var(--contacts-color);
+}
+
+.list-contats .item + .item {
+  margin-left: 50px;
+}
+
+.btn {
+  min-height: 50px;
+  width: 216px;
+  padding: 10px 32px;
+  background: var(--brand-color-left);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-family: var(--main-font);
+  color: var(--light-txt-cl);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
+
+.btn:hover,
+.btn:focus {
+  background: #188ce8;
+}
+
+.propriet {
+  list-style-type: none;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.about-feature {
+  width: 270px;
+  display: block;
+}
+
+.propriet .about-feature + .about-feature {
+  margin-left: 30px;
+}
+
+.propriet .feature {
+  display: flex;
+  color: var(--main-txt-cl);
+  font-family: var(--main-font);
+}
+
+.feature {
+  list-style-type: none;
+}
+
+.description {
+  font-family: var(--main-font);
+  color: var(--contacts-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+}
+
+.propriet .title {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  text-transform: uppercase;
+  color: var(--brand-color-right);
+  margin-bottom: 10px;
+}
+
+.list-duty {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.our-team {
+  display: flex;
+  list-style-type: none;
+  font-family: var(--main-font);
+  gap: 30px;
+}
+
+.section .wraper {
+  display: flex;
+}
+
+.section-wraper .img {
+  padding-bottom: 94px;
+}
+
+.section-wraper .title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  color: var(--main-txt-cl);
+  text-align: center;
+}
+
+.footer .link {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: var(--brand-color-fut);
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.footer .item {
+  list-style-type: none;
+}
+
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--brand-color-left);
+}
+
+.footer {
+  background: var(--hero-footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-footer {
+  color: var(--light-txt-cl);
+}
+
+.link .adress {
+  color: var(--light-txt-cl);
+}
+
+.contacts-addres .contacts {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--contacts-color-footer);
+}
+.footer .list-item {
+  list-style-type: none;
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--brand-color-left);
+}
+
+.proect {
+  list-style-type: none;
+  font-family: var(--main-font);
+}
+
+.descr {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  color: var(--contacts-color);
+}
+
+.filtrs {
+  list-style-type: none;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+}
+.filtrs {
+  display: flex;
+  gap: 8px;
+}
+
+.filtrs .button:hover,
+.filtrs .button:focus {
+  color: var(--brand-color-fut);
+  background-color: var(--brand-color-left);
+}
+
+.filtrs {
+  display: flex;
+}
+.section-app {
+  padding-top: 94px;
+}
+
+.button {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  color: var(--brand-color-right);
+  background: var(--team-color-content);
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  color: var(--brand-color-left);
+}
+.section-team {
+  background: var(--team-color-content);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-team .title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  color: var(--main-txt-cl);
+  text-align: center;
+}
+.section-team .item {
+  background-color: var(--brand-color-fut);
+}
+.our-team .img {
+  display: block;
+  padding-bottom: 30px;
+}
+.team-name {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+  padding-bottom: 10px;
+}
+.title {
+  margin-bottom: 50px;
+}
