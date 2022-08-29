@@ -386,7 +386,7 @@ img {
 .filtrs {
   display: flex;
 }
-.section-app {
+.filtrs .item {
   padding-top: 94px;
 }
 
