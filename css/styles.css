@@ -70,10 +70,6 @@ img {
 .hero {
   background: var(--hero-footer-color);
   text-align: center;
-  padding-top: 200px;
-  padding-right: 452px;
-  padding-bottom: 200px;
-  padding-left: 452px;
 }
 
 .page-header {
